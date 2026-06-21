@@ -233,7 +233,7 @@ export function UserDetailsPage() {
       {isLoading ? (
         <TableSkeleton rows={6} columns={2} />
       ) : user ? (
-        <div className="mx-auto max-w-[900px]">
+        <div className="">
           <div className="flex flex-col gap-8 md:flex-row md:items-center">
             <Avatar user={user} className="size-40 text-3xl" />
             <div className="flex-1">

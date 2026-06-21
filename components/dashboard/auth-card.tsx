@@ -41,11 +41,11 @@ export function LoginForm() {
       <form onSubmit={onSubmit} className="space-y-5">
         <label className="block space-y-2">
           <span className="text-sm font-medium">Email</span>
-          <Input name="email" type="email" defaultValue="admin@gmail.com" required />
+          <Input name="email" type="email" placeholder="Enter your email" required />
         </label>
         <label className="block space-y-2">
           <span className="text-sm font-medium">Password</span>
-          <PasswordInput name="password" defaultValue="123456" required />
+          <PasswordInput name="password" placeholder="Enter your password" required />
         </label>
         <Button type="submit" size="lg" className="w-full" disabled={loading}>
           {loading ? "Signing in..." : "Login"}
